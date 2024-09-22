@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lorem Ipsum Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Lorem Ipsum Generator</h1>
+    </header>
+    <section>
+      <div class="options">
+        <div class="paragraph">
+          <label for="paragraph"> Paragraphs: </label>
+          <input type="range" id="paraRange" min="1" max="100" value="1" />
+        </div>
+        <span id="paraNum">1</span>
+        <div class="wordsInPara">
+          <label for="wordsInPara"> Words per Paragraph: </label>
+          <input type="range" id="wordsRange" min="10" max="1000" value="10" />
+        </div>
+        <span id="wordsNum">10</span>
+        <div class="tags">
+          <label for="tags"> Tags: </label>
+          <select id="tagSelect"></select>
+        </div>
+        <div class="include">
+          <label for="include"> Include HTML: </label>
+          <select id="incSelect">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+        <button id="generate">Generate Lorem Ipsum</button>
+      </div>
+      <div class="output">
+          
+        <!-- Lorem Ipsum text will
+             be displayed here -->
+    </div>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>
